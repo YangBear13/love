@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>小蓝不会浪漫</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="imgs/love.ico"/>
 		<style>
 			html,
 			body {
@@ -21,20 +22,22 @@
 			body {
 				margin: 0;
 				padding: 0;
+				background: #ffa5a5;
 				/*定义body 渐变，向页面。*/
+				/*background: linear-gradient(to bottom, #ffa5a5 0%,#ffd3d3 100%);*/
 			}
 
 			.pink {
-				background: linear-gradient(45deg, #917eff 0%,#ff58ca 100%);
+				background-color: #e2e2e2;
 			}
 
 			.pink .heart {
-				background: linear-gradient(-90deg, #5db9e7 0%, #67caff 40%);
+				background: linear-gradient(-90deg, #e19393 0%, #ffa5a5 40%);
 				animation: beatpink 0.7s ease 0s infinite normal;
 			}
 
 			.pink .heart.center {
-				background: linear-gradient(-45deg, #67caff 0%, #67caff 40%);
+				background: linear-gradient(-45deg, #ffa5a5 0%, #ffa5a5 40%);
 			}
 
 			/* 全局 */
@@ -115,17 +118,17 @@
 			@keyframes beatpink {
 				0% {
 					transform: scale(1) rotate(225deg);
-					box-shadow: 0 0 40px #67caff;
+					box-shadow: 0 0 40px #ffa5a5;
 				}
 
 				50% {
 					transform: scale(1.1) rotate(225deg);
-					box-shadow: 0 0 70px #67caff;
+					box-shadow: 0 0 70px #ffa5a5;
 				}
 
 				100% {
 					transform: scale(1) rotate(225deg);
-					box-shadow: 0 0 40px #67caff;
+					box-shadow: 0 0 40px #ffa5a5;
 				}
 			}
 
@@ -133,7 +136,7 @@
 				position: fixed;
 				bottom: 20px;
 				right: 20px;
-				color: #fff;
+				color: #ca8484;
 				opacity: .3;
 				animation: btt .5s ease-in-out;
 				font-size: 30px;
@@ -161,7 +164,7 @@
 				position: fixed;
 				top: 40px;
 				left: 40px;
-				color: #fff;
+				color: #ca8484;
 				animation: btt 1s;
 				font-size: 30px;
 			}
